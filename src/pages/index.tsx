@@ -58,3 +58,11 @@ export default function Home() {
     </HomeContainer>
   );
 }
+
+export const getServerSideProps = () => {
+  return {
+    props: {
+      list: [1, 2, 3],
+    },
+  };
+};
