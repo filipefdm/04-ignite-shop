@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/future/image";
+import Head from "next/head";
 
 import Stripe from "stripe";
 import { stripe } from "../../lib/stripe";
@@ -12,7 +13,6 @@ import {
   ProductContainer,
   ProductDetails,
 } from "../../styles/pages/product";
-import Head from "next/head";
 
 interface ProductProps {
   product: {
